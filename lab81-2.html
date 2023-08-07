@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>up nhiều file</title>
+  </head>
+  <body>
+    <input type="file" multiple onchange="uploadFile1(this.files)" />
+    <div id="message1"></div>
+  </body>
+  <script>
+    let message1 = document.getElementById("message1");
+    function uploadFile1(files) {
+      for (let i = 0; i < files.length; i++) {
+        message1.innerHTML += files[i].name + "<br>";
+      }
+    }
+  </script>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>up 1 file</title>
+  </head>
+  <body>
+    <input type="file" onchange="uploadFile(this.files)" />
+    <div id="message"></div>
+  </body>
+  <script>
+    let message = document.getElementById("message");
+    function uploadFile(files) {
+      message.innerText = files[0].name;
+    }
+  </script>
+</html>
